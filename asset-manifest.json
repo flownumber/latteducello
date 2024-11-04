@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/latteducello/static/css/main.1f21a28d.css",
-    "main.js": "/latteducello/static/js/main.12418491.js",
+    "main.js": "/latteducello/static/js/main.ec0f41d8.js",
     "static/js/453.09aed33e.chunk.js": "/latteducello/static/js/453.09aed33e.chunk.js",
     "static/media/intro.jpg": "/latteducello/static/media/intro.2be48a5c8904266ea284.jpg",
     "static/media/prova1.jpg": "/latteducello/static/media/prova1.340f33367401905dd182.jpg",
@@ -9,11 +9,11 @@
     "static/media/logo.jpg": "/latteducello/static/media/logo.032c30be8bef8c0462e8.jpg",
     "index.html": "/latteducello/index.html",
     "main.1f21a28d.css.map": "/latteducello/static/css/main.1f21a28d.css.map",
-    "main.12418491.js.map": "/latteducello/static/js/main.12418491.js.map",
+    "main.ec0f41d8.js.map": "/latteducello/static/js/main.ec0f41d8.js.map",
     "453.09aed33e.chunk.js.map": "/latteducello/static/js/453.09aed33e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f21a28d.css",
-    "static/js/main.12418491.js"
+    "static/js/main.ec0f41d8.js"
   ]
 }
