@@ -156,8 +156,6 @@
 }
 
 
-
-
 /* Media query per schermi piccoli */
 @media (max-width: 768px) {
   .header {
@@ -237,3 +235,5 @@
     width: 100%; /* Allarga i pulsanti su mobile */
   }
 }
+
+
