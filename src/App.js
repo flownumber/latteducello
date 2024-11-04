@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './Header';
 import HomePage from './pages/HomePage';
@@ -14,17 +15,20 @@ function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <Router basename="/latteducello"> {/* Imposta il basename */}
+        <Router basename="/latteducello">
           <div className="App">
             <Header />
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              {/* Reindirizza direttamente alla HomePage */}
+              <Route path="/" element={<Navigate to="/homepage" replace />} />
+              <Route path="/homepage" element={<HomePage />} />
               <Route path="/product/:id" element={<ProductDetail />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/backend" element={<Backend />} />
-              <Route path="*" element={<Navigate to="/" />} /> {/* Redirect per percorsi non definiti */}
+              {/* Redirect per rotte non definite */}
+              <Route path="*" element={<Navigate to="/homepage" />} />
             </Routes>
           </div>
         </Router>
