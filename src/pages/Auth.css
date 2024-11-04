@@ -1,0 +1,73 @@
+/* src/pages/Auth.css */
+
+.auth-container {
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  min-height: 100vh; /* Altezza minima per riempire la schermata */
+  background-color: #f4f4f4; /* Colore di sfondo chiaro */
+  padding: 20px; /* Padding per il contenitore */
+}
+
+.auth-form {
+  background-color: #fff; /* Sfondo bianco per il modulo */
+  border-radius: 8px; /* Angoli arrotondati */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombra per profondità */
+  padding: 30px; /* Spaziatura interna */
+  width: 100%; /* Larghezza del modulo */
+  max-width: 400px; /* Larghezza massima per il modulo */
+}
+
+.auth-form h2 {
+  margin-bottom: 20px; /* Margine sotto il titolo */
+  text-align: center; /* Centro il titolo */
+  color: #333; /* Colore del titolo */
+}
+
+.auth-form label {
+  display: block; /* I label si comportano come blocchi */
+  margin-bottom: 5px; /* Margine sotto il label */
+  font-weight: bold; /* Grassetto per i label */
+  color: #333; /* Colore del testo */
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%; /* Larghezza piena */
+  padding: 10px; /* Padding interno */
+  margin-bottom: 20px; /* Margine sotto il campo di input */
+  border: 1px solid #ddd; /* Bordo chiaro */
+  border-radius: 4px; /* Angoli arrotondati */
+  font-size: 1rem; /* Dimensione del font */
+}
+
+.auth-form input[type="submit"] {
+  background-color: #ff4500; /* Colore di sfondo per il pulsante */
+  color: #fff; /* Colore del testo */
+  border: none; /* Rimuovi bordi */
+  border-radius: 4px; /* Angoli arrotondati */
+  padding: 10px; /* Padding interno */
+  cursor: pointer; /* Cursore a mano */
+  font-size: 1rem; /* Dimensione del font */
+  transition: background-color 0.3s ease; /* Transizione per il colore di sfondo */
+}
+
+.auth-form input[type="submit"]:hover {
+  background-color: #e03e00; /* Colore di sfondo più scuro al passaggio del mouse */
+}
+
+.auth-form .footer {
+  margin-top: 20px; /* Margine sopra il footer */
+  text-align: center; /* Centro il footer */
+  color: #666; /* Colore del testo */
+}
+
+.auth-form .footer a {
+  color: #ff4500; /* Colore del link */
+  text-decoration: none; /* Rimuovi sottolineatura */
+}
+
+.auth-form .footer a:hover {
+  text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
+}

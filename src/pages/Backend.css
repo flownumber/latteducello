@@ -1,0 +1,61 @@
+.backend-container {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #222; /* Sfondo scuro */
+  color: white; /* Testo bianco */
+}
+
+.backend-container h1 {
+  text-align: center;
+  color: #ff4757; /* Rosso */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Spazio tra i campi */
+}
+
+.backend-container label {
+  margin-bottom: 5px;
+  display: block; /* Rendi i label blocchi */
+  font-weight: bold; /* Grassetto per i label */
+  color: #ff4757; /* Rosso */
+}
+
+.backend-container input,
+.backend-container textarea {
+  width: 100%; /* Larghezza completa */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #333; /* Sfondo scuro per i campi */
+  color: white; /* Testo bianco nei campi */
+}
+
+.backend-container input::placeholder,
+.backend-container textarea::placeholder {
+  color: #aaa; /* Colore del segnaposto */
+}
+
+.backend-container button {
+  padding: 10px;
+  background-color: #ff4757; /* Rosso */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Dimensione del testo */
+  transition: background-color 0.3s; /* Transizione al passaggio del mouse */
+}
+
+.backend-container button:hover {
+  background-color: #ff6b81; /* Rosso più chiaro al passaggio del mouse */
+}
+
+.backend-container p {
+  text-align: center;
+  color: #4CAF50; /* Verde per i messaggi di successo */
+  font-weight: bold;
+}

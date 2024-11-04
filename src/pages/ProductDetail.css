@@ -1,0 +1,67 @@
+.product-detail {
+  background-color: #222; /* Nero per lo sfondo */
+  color: #ffd700; /* Giallo per il testo */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px; /* Limita la larghezza per una migliore leggibilità */
+  margin: 20px auto; /* Centra la pagina */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombra per profondità */
+}
+
+.product-title {
+  text-align: center;
+  color: #ff4500; /* Rosso per il titolo */
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 100%; /* Immagine responsiva */
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  font-size: 1.5em; /* Maggiore dimensione per il prezzo */
+  text-align: center;
+  margin: 10px 0;
+}
+
+.product-description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.quantity-input {
+  width: 60px; /* Dimensione fissa per l'input della quantità */
+  margin-left: 10px;
+  border-radius: 4px;
+  border: 1px solid #ffd700; /* Bordo giallo */
+  padding: 5px;
+  background-color: #333; /* Sfondo scuro per l'input */
+  color: #ffd700; /* Testo giallo */
+}
+
+.add-to-cart-button {
+  background-color: #ff4500; /* Rosso per il pulsante */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  font-size: 1em; /* Dimensione del font per il pulsante */
+  transition: background-color 0.3s, transform 0.2s; /* Transizione per l'effetto hover */
+}
+
+.add-to-cart-button:hover {
+  background-color: #ff6347; /* Rosso più chiaro al passaggio del mouse */
+  transform: translateY(-2px); /* Leggero sollevamento al passaggio del mouse */
+}

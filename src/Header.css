@@ -1,0 +1,239 @@
+/* src/components/Header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #222; /* Sfondo scuro */
+  color: #ffd700; /* Colore del testo */
+  position: relative; /* Necessario per i dropdown */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombra per dare profondità */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Cursore a mano */
+}
+
+.logo {
+  height: 40px; /* Altezza dell'immagine del logo */
+  margin-right: 10px; /* Spaziatura a destra del logo */
+}
+
+.site-name {
+  font-size: 1.5rem; /* Dimensione del nome del sito */
+  color: #ffd700; /* Colore oro */
+  margin: 0; /* Rimuovi margini */
+  text-transform: uppercase; /* Testo maiuscolo */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  position: relative; /* Necessario per i dropdown */
+}
+
+.cart-container {
+  position: relative; /* Necessario per il posizionamento del dropdown */
+  cursor: pointer; /* Cursore a mano per il carrello */
+  margin-left: 20px; /* Spaziatura a sinistra per il carrello */
+}
+
+.cart-icon {
+  height: 2.5em; /* Altezza dell'icona del carrello */
+  border-radius: 2em;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px; /* Posizione della notifica sopra l'icona */
+  right: -10px; /* Posizione della notifica a destra */
+  background-color: #ff4500; /* Colore rosso per la notifica */
+  color: #fff; /* Colore del testo della notifica */
+  border-radius: 50%; /* Forma rotonda */
+  padding: 4px 8px; /* Spaziatura interna */
+  font-size: 0.8rem; /* Dimensione del testo della notifica */
+}
+
+.cart-dropdown {
+  position: absolute; /* Posizionamento assoluto per il dropdown */
+  top: 40px; /* Distanza dall'alto */
+  right: 0; /* Allineato a destra */
+  background-color: #333; /* Sfondo del dropdown */
+  border: 1px solid #444; /* Bordo del dropdown */
+  padding: 10px; /* Spaziatura interna */
+  width: 250px; /* Larghezza del dropdown */
+  color: #ffd700; /* Colore del testo */
+  border-radius: 4px; /* Angoli arrotondati */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra per profondità */
+  z-index: 1000; /* Assicura che il dropdown sia sopra altri elementi */
+}
+
+.cart-dropdown h4 {
+  margin: 0 0 10px; /* Margini per il titolo del dropdown */
+}
+
+.cart-dropdown ul {
+  list-style-type: none; /* Rimuove i punti elenco */
+  padding: 0; /* Rimuove la spaziatura */
+  margin: 0; /* Rimuove margini */
+}
+
+.cart-dropdown li {
+  margin-bottom: 8px; /* Spaziatura tra gli elementi */
+}
+
+.cart-dropdown button {
+  background-color: #ff4500; /* Colore rosso per i bottoni */
+  color: #fff; /* Colore del testo */
+  border: none; /* Rimuovi bordi */
+  border-radius: 4px; /* Angoli arrotondati */
+  padding: 4px 8px; /* Spaziatura interna */
+  cursor: pointer; /* Cursore a mano */
+  margin-left: 5px; /* Spaziatura a sinistra */
+  transition: background-color 0.3s; /* Transizione per il colore di sfondo */
+}
+
+.cart-dropdown button:hover {
+  background-color: #e03e00; /* Colore più scuro al passaggio del mouse */
+}
+
+.view-cart-button {
+  display: inline-block; /* Rende il pulsante un blocco inline */
+  margin-top: 10px; /* Margine sopra il pulsante */
+  padding: 8px; /* Spaziatura interna */
+  background-color: #ff4500; /* Colore rosso */
+  color: #fff; /* Colore del testo */
+  text-align: center; /* Allinea il testo al centro */
+  border-radius: 4px; /* Angoli arrotondati */
+  text-decoration: none; /* Nessuna sottolineatura */
+  transition: background-color 0.3s; /* Transizione per il colore di sfondo */
+}
+
+.view-cart-button:hover {
+  background-color: #e03e00; /* Colore più scuro al passaggio del mouse */
+}
+
+.login-container {
+  margin-left: 20px; /* Spaziatura a sinistra per il login */
+  cursor: pointer; /* Cursore a mano */
+}
+
+.login-icon {
+  height: 3em; /* Altezza dell'icona di login */
+}
+/* src/components/Header.css */
+
+.login-dropdown {
+  position: absolute; /* Posizionamento assoluto per il dropdown di login */
+  top: 40px; /* Distanza dall'alto */
+  right: 0; /* Allineato a destra */
+  background-color: #333; /* Sfondo del dropdown */
+  border: 1px solid #444; /* Bordo del dropdown */
+  padding: 10px; /* Spaziatura interna */
+  width: 200px; /* Larghezza del dropdown */
+  color: #ffd700; /* Colore del testo */
+  border-radius: 4px; /* Angoli arrotondati */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra per profondità */
+  z-index: 1000; /* Assicura che il dropdown sia sopra altri elementi */
+}
+
+.login-dropdown button {
+  background-color: #ff4500; /* Colore rosso per i bottoni */
+  color: #fff; /* Colore del testo */
+  border: none; /* Rimuovi bordi */
+  border-radius: 4px; /* Angoli arrotondati */
+  padding: 8px; /* Spaziatura interna */
+  cursor: pointer; /* Cursore a mano */
+  margin-top: 5px; /* Spaziatura sopra i bottoni */
+  width: 100%; /* Larghezza del pulsante */
+}
+
+.login-dropdown button:hover {
+  background-color: #e03e00; /* Colore più scuro al passaggio del mouse */
+}
+
+
+
+
+/* Media query per schermi piccoli */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Disposizione verticale per maggiore spazio */
+    padding: 10px 20px;
+  }
+
+  .header-left,
+  .header-right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+  }
+
+  .header-left {
+    justify-content: center;
+    margin-left: -9em;
+  }
+
+  .header-right {
+    justify-content: center;
+    gap: 20px; /* Spaziatura tra icone */
+    margin-top: -3em;
+  }
+
+  .cart-container {
+    margin-left: 0; /* Rimuove margine extra */
+    display: flex;
+    align-items: center;
+    margin-left: 18em;
+  }
+  .login-container {
+    margin-left: 0; /* Rimuove margine extra */
+    display: flex;
+    align-items: center;
+  }
+
+  .cart-icon,
+  .login-icon {
+    height: 2em; /* Ridimensionamento icone per schermi piccoli */
+  }
+
+  .cart-count {
+    top: -5px; /* Leggera regolazione per mantenere allineamento con icona */
+    right: -5px;
+    font-size: 0.7rem; /* Adatta testo per schermi piccoli */
+  }
+
+  .site-name {
+    font-size: 1.2rem; /* Ridimensionamento testo per smartphone */
+    text-align: center;
+  }
+
+  .cart-dropdown {
+    width: 20em;
+    top: auto;
+    bottom: -10px;
+    margin-bottom: -11em;
+    margin-right: -4em;
+    
+  }
+  .login-dropdown {
+
+    width: 100%; /* Larghezza piena per facilità d'uso su mobile */
+    top: auto;
+    bottom: -10px;
+    margin-bottom: -8em;
+  }
+
+  .view-cart-button {
+    width: 95%; /* Allarga i pulsanti su mobile */
+  }
+  .login-dropdown button {
+    width: 100%; /* Allarga i pulsanti su mobile */
+  }
+}

@@ -1,0 +1,186 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.product {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  color: #ffd700;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra per un effetto di profondità */
+  transition: transform 0.2s; /* Transizione per l'effetto hover */
+}
+
+.product:hover {
+  transform: translateY(-5px); /* Sollevare il prodotto al passaggio del mouse */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold; /* Grassetto per il testo del pulsante */
+  transition: background-color 0.3s, transform 0.2s; /* Transizione per i pulsanti */
+}
+
+.catalogo {
+  text-align: center;
+}
+
+button:hover {
+  background-color: #ff6347;
+  transform: translateY(-2px); /* Leggero sollevamento al passaggio del mouse */
+}
+
+.details-button {
+  display: inline-block; /* Assicurati che il pulsante sia un blocco in linea */
+  background-color: #c11717; /* Colore di sfondo per il pulsante "Dettagli" */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none; /* Rimuovi sottolineatura */
+  transition: background-color 0.3s, transform 0.2s; /* Transizione per l'effetto hover */
+  margin-top: 10px; /* Margine superiore */
+}
+
+.details-button:hover {
+  background-color: #db9646; /* Colore di sfondo al passaggio del mouse */
+  transform: translateY(-2px); /* Leggero sollevamento al passaggio del mouse */
+}
+
+.order-button {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.order-button:hover {
+  background-color: #ff6347;
+}
+/* IntroPage.css */
+.intro-container {
+  background-image: url('../img/intro.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-content {
+  text-align: center;
+  color: #fdd835; /* Colore giallo */
+  background-color: rgba(0, 0, 0, 0.7); /* Sfondo semi-trasparente nero */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.site-name-intro {
+  font-size: 3em;
+  color: #d32f2f; /* Colore rosso */
+}
+
+.site-description {
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: #fdd835; /* Colore giallo */
+}
+
+.enter-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #fdd835; /* Testo giallo */
+  background-color: #d32f2f; /* Colore di sfondo rosso */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.enter-button:hover {
+  background-color: #c62828; /* Rosso scuro per hover */
+}
+/* Adattamento per schermi piccoli (telefono) */
+@media (max-width: 768px) {
+  /* Imposta la lista dei prodotti in colonna con centratura */
+  .product-list {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .product {
+    width: 100%; /* Larghezza completa per adattarsi alla larghezza dello schermo */
+    padding: 15px;
+    font-size: 0.9em; /* Riduce leggermente la dimensione del testo */
+  }
+
+  .product-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .details-button,
+  .order-button {
+    width: 100%; /* Larghezza al 100% per pulsanti */
+    font-size: 0.9em;
+    padding: 8px;
+    margin-top: 5px;
+  }
+
+  /* Adattamento dell'introduzione */
+  .intro-container {
+    height: 35vh; /* Altezza ridotta per schermi piccoli */
+    padding: 10px;
+    background-position: top center;
+  }
+
+  .intro-content {
+    padding: 15px;
+    font-size: 0.9em;
+    margin-top: 2.5em;
+  }
+
+  .site-name-intro {
+    font-size: 2em; /* Riduzione del titolo */
+  }
+
+  .site-description {
+    font-size: 1.2em; /* Riduzione della descrizione */
+  }
+
+  .enter-button {
+    font-size: 1em; /* Riduzione del bottone di ingresso */
+    padding: 8px 15px;
+    margin-top: 10px;
+  }
+}
