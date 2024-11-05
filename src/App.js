@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import HomePage from './pages/HomePage';
+import Footer from './pages/Footer';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
 import Login from './pages/Login'; // Importa il Login
@@ -27,6 +28,7 @@ function App() {
               <Route path="/register" element={<Register />} /> {/* Rotta per la registrazione */}
               <Route path="/backend" element={<Backend />} /> 
             </Routes>
+            <Footer />
           </div>
         </Router>
       </CartProvider>

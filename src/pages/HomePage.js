@@ -31,7 +31,13 @@ function HomePage() {
   };
 
   return (
-    <div>
+    <div className="home-page">
+      {/* Video in loop impostato come sfondo */}
+      <video autoPlay loop muted playsInline className="background-video">
+        <source src={require('../img/intro.mp4')} type="video/mp4" />
+        Il tuo browser non supporta il video HTML5.
+      </video>
+
       {/* Aggiungi la pagina di introduzione sopra il catalogo */}
       <IntroPage />
       

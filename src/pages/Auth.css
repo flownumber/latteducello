@@ -5,12 +5,12 @@
   justify-content: center; /* Centra orizzontalmente */
   align-items: center; /* Centra verticalmente */
   min-height: 100vh; /* Altezza minima per riempire la schermata */
-  background-color: #f4f4f4; /* Colore di sfondo chiaro */
+  background-color: #353333; /* Colore di sfondo chiaro */
   padding: 20px; /* Padding per il contenitore */
 }
 
 .auth-form {
-  background-color: #fff; /* Sfondo bianco per il modulo */
+  background-color: #ecdddd; /* Sfondo bianco per il modulo */
   border-radius: 8px; /* Angoli arrotondati */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombra per profondità */
   padding: 30px; /* Spaziatura interna */
@@ -44,7 +44,7 @@
 
 .auth-form input[type="submit"] {
   background-color: #ff4500; /* Colore di sfondo per il pulsante */
-  color: #fff; /* Colore del testo */
+  color: #423333; /* Colore del testo */
   border: none; /* Rimuovi bordi */
   border-radius: 4px; /* Angoli arrotondati */
   padding: 10px; /* Padding interno */
@@ -57,17 +57,17 @@
   background-color: #e03e00; /* Colore di sfondo più scuro al passaggio del mouse */
 }
 
-.auth-form .footer {
+.auth-form .footer-reg {
   margin-top: 20px; /* Margine sopra il footer */
   text-align: center; /* Centro il footer */
   color: #666; /* Colore del testo */
 }
 
-.auth-form .footer a {
+.auth-form .footer-reg a {
   color: #ff4500; /* Colore del link */
   text-decoration: none; /* Rimuovi sottolineatura */
 }
 
-.auth-form .footer a:hover {
+.auth-form .footer-reg a:hover {
   text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
 }

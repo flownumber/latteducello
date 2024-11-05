@@ -1,0 +1,47 @@
+/* Stile migliorato per Footer */
+.footer {
+  background: linear-gradient(to right, #d93c3c99, #c166667d, #e8af65a6, #e8ba64a1, #8e48268c, #a88c3991);
+  color: transparent; /* Colore del testo impostato su trasparente per sfondo gradiente */
+  padding: 15px 0; /* Padding verticale */
+  text-align: center; /* Allineamento del testo al centro */
+  font-size: 0.9em; /* Dimensione base del font */
+  width: 100%; /* Larghezza massima */
+  margin-top: 40px; /* Margine superiore */
+  border-radius: 0.8em 0.8em 0em 0em; /* Raggio di arrotondamento degli angoli */
+}
+
+.footer p {
+  margin: 0; /* Rimuove margini dal paragrafo */
+  color: #f2e28a; /* Colore del testo */
+  font-size: 21px; /* Dimensione del testo */
+}
+a {
+  color: #f2e28a;
+  cursor: pointer;
+  vertical-align: baseline;
+  font-family: cursive;
+}
+
+/* Media Queries per adattare il footer a schermi più piccoli */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 0; /* Riduci il padding */
+    font-size: 0.8em; /* Dimensione font ridotto per tablet */
+  }
+
+  .footer p {
+    font-size: 18px; /* Riduci la dimensione del testo per tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 8px 0; /* Ulteriore riduzione del padding per smartphone */
+    font-size: 0.7em; /* Dimensione font ulteriormente ridotto per smartphone */
+    margin-bottom: -10em;
+  }
+
+  .footer p {
+    font-size: 16px; /* Riduci ulteriormente la dimensione del testo per smartphone */
+  }
+}

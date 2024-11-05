@@ -39,7 +39,7 @@ function Register() {
           </div>
           <input type="submit" value="Registrati" />
         </form>
-        <div className="footer">
+        <div className="footer-reg">
           <p>Hai già un account? <a href="/login">Accedi qui</a></p>
         </div>
       </div>

@@ -4,6 +4,7 @@
   border-radius: 8px;
   max-width: 800px;
   margin: auto;
+  margin-top: 6em;
 }
 
 .order-summary {
@@ -65,4 +66,7 @@
 
 .back-to-catalog-button:hover {
   background-color: #ff6347;
+}
+.footer {
+  margin-top: 14em;
 }

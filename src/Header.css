@@ -1,11 +1,32 @@
 /* src/components/Header.css */
+.home-page {
+  position: relative; /* Per posizionare gli elementi sopra il video */
+}
+
+.background-video {
+  position: absolute; /* Posiziona il video in modo assoluto */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Copre l'intero schermo */
+  z-index: -1; /* Assicurati che il video sia dietro gli altri contenuti */
+}
+
+.intro-container,
+.catalogo,
+.filter-buttons,
+.product-list {
+  position: relative; /* Assicurati che il contenuto venga visualizzato sopra il video */
+  z-index: 1; /* Metti il contenuto sopra il video */
+}
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #222; /* Sfondo scuro */
+  background: linear-gradient(to right, #d93c3c99, #c166667d, #e8af65a6, #e8ba64a1, #8e48268c, #a88c3991);
   color: #ffd700; /* Colore del testo */
   position: relative; /* Necessario per i dropdown */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombra per dare profondità */
@@ -24,7 +45,7 @@
 
 .site-name {
   font-size: 1.5rem; /* Dimensione del nome del sito */
-  color: #ffd700; /* Colore oro */
+  color: #ebe9e1; /* Colore oro */
   margin: 0; /* Rimuovi margini */
   text-transform: uppercase; /* Testo maiuscolo */
 }
@@ -176,12 +197,14 @@
   .header-left {
     justify-content: center;
     margin-left: -9em;
+    padding: 0.1em;
   }
 
   .header-right {
     justify-content: center;
-    gap: 20px; /* Spaziatura tra icone */
+    gap: 1em; /* Spaziatura tra icone */
     margin-top: -3em;
+    width: 3em;
   }
 
   .cart-container {
@@ -222,10 +245,11 @@
   }
   .login-dropdown {
 
-    width: 100%; /* Larghezza piena per facilità d'uso su mobile */
+    width: 10em; /* Larghezza piena per facilità d'uso su mobile */
     top: auto;
     bottom: -10px;
     margin-bottom: -8em;
+    margin-right: -10em;
   }
 
   .view-cart-button {

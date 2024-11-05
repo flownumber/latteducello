@@ -6,36 +6,28 @@ import './Header.css';
 import logo from './img/logo.jpg';
 import cartIcon from './img/cart.png';
 import logIcon from './img/log.png';
-import productsData from './data/productsData'; // Importa i dati dei prodotti
+import productsData from './data/productsData';
 
 function Header() {
-  const { cartItems, updateQuantity } = useCart();
+  const { cartItems, updateQuantity, removeFromCart } = useCart();
   const { user, logout } = useAuth(); 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isLoginDropdownOpen, setIsLoginDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleLogoClick = () => navigate('/');
-
-  // Funzione per aprire/chiudere il dropdown del carrello
   const toggleDropdown = () => setIsDropdownOpen((prev) => !prev);
-
-  // Funzione per aprire/chiudere il dropdown del profilo utente
   const toggleLoginDropdown = () => setIsLoginDropdownOpen((prev) => !prev);
-
   const handleLoginClick = () => navigate('/login');
-
   const handleRegisterClick = () => navigate('/register');
-
   const handleLogoutClick = () => {
     logout();
     console.log("Utente disconnesso");
   };
 
-  // Funzione per ottenere l'immagine del prodotto dal suo ID
   const getProductImage = (productId) => {
     const product = productsData.find((p) => p.id === productId);
-    return product ? require(`./img/${product.img}`) : null; // Carica l'immagine in base al nome del file
+    return product ? require(`./img/${product.img}`) : null;
   };
 
   return (
@@ -69,6 +61,7 @@ function Header() {
                       <div className="cart-item-controls">
                         <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.id, 1); }}>+</button>
                         <button onClick={(e) => { e.stopPropagation(); updateQuantity(item.id, -1); }}>-</button>
+                        <button onClick={(e) => { e.stopPropagation(); removeFromCart(item.id); }}>Rimuovi</button>
                       </div>
                     </li>
                   ))}
