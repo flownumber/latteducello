@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/latteducello/static/css/main.1f21a28d.css",
-    "main.js": "/latteducello/static/js/main.12418491.js",
+    "main.css": "/latteducello/static/css/main.1315bf2d.css",
+    "main.js": "/latteducello/static/js/main.3711e9c9.js",
     "static/js/453.09aed33e.chunk.js": "/latteducello/static/js/453.09aed33e.chunk.js",
-    "static/media/intro.jpg": "/latteducello/static/media/intro.2be48a5c8904266ea284.jpg",
+    "static/media/intro.mp4": "/latteducello/static/media/intro.786dd161e667d06d6075.mp4",
+    "static/media/logo.jpg": "/latteducello/static/media/logo.ff3a1de73203b45add88.jpg",
+    "static/media/intro.jpg": "/latteducello/static/media/intro.c037bec1f6329bdbb377.jpg",
     "static/media/prova1.jpg": "/latteducello/static/media/prova1.340f33367401905dd182.jpg",
     "static/media/prova.jpg": "/latteducello/static/media/prova.7591c304a4793ddfd5f3.jpg",
-    "static/media/logo.jpg": "/latteducello/static/media/logo.032c30be8bef8c0462e8.jpg",
     "index.html": "/latteducello/index.html",
-    "main.1f21a28d.css.map": "/latteducello/static/css/main.1f21a28d.css.map",
-    "main.12418491.js.map": "/latteducello/static/js/main.12418491.js.map",
+    "main.1315bf2d.css.map": "/latteducello/static/css/main.1315bf2d.css.map",
+    "main.3711e9c9.js.map": "/latteducello/static/js/main.3711e9c9.js.map",
     "453.09aed33e.chunk.js.map": "/latteducello/static/js/453.09aed33e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f21a28d.css",
-    "static/js/main.12418491.js"
+    "static/css/main.1315bf2d.css",
+    "static/js/main.3711e9c9.js"
   ]
 }
